@@ -113,7 +113,7 @@ article {
                     
                     
                     
-                    Connection con =DriverManager.getConnection("mysql://us-cdbr-iron-east-05.cleardb.net/heroku_125cfa8a64d4449?reconnect=true", "bb390c29cf6e54", "f3d074c8");
+                    Connection con =DriverManager.getConnection("mysql://bb390c29cf6e54:f3d074c8@us-cdbr-iron-east-05.cleardb.net/heroku_125cfa8a64d4449?reconnect=true");
                     Statement stmt=con.createStatement();
                     String sql="insert into teacher values('"+firstname+"','"+lastname+"','"+id+"','"+pwd+"','"+gender+"','"+phone+"')";
                     int a=stmt.executeUpdate(sql);
